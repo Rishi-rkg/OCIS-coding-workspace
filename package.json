@@ -1,0 +1,26 @@
+{
+  "name": "ocis-coding-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "node server/index.mjs",
+    "start": "node server/index.mjs --production",
+    "build": "vite build",
+    "test": "node --test tests/*.test.mjs",
+    "demo": "node scripts/demo.mjs"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.9",
+    "vite": "^7.1.0"
+  }
+}

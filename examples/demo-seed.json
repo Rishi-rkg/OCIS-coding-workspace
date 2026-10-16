@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "codebookVersion": "demo-1",
+  "groups": [
+    {
+      "id": "RQ1",
+      "name": "Example research question",
+      "question": "How is information shared?",
+      "codes": [
+        "C01",
+        "C02"
+      ]
+    }
+  ],
+  "protocol": {
+    "B": [
+      {
+        "id": 1,
+        "title": "Describe your workflow.",
+        "section": "Example interview",
+        "tags": [
+          "information sharing"
+        ]
+      }
+    ]
+  },
+  "codebook": [
+    {
+      "id": "C01",
+      "name": "Repeating work takes time",
+      "definition": "Repeated manual transfer of information.",
+      "include": "Repeated manual transfer of information.",
+      "exclude": "Unrelated material",
+      "group": "RQ1",
+      "researchQuestions": [
+        "RQ1"
+      ],
+      "active": true
+    },
+    {
+      "id": "C02",
+      "name": "Current tools work well",
+      "definition": "A workable existing process.",
+      "include": "A workable existing process.",
+      "exclude": "Unrelated material",
+      "group": "RQ1",
+      "researchQuestions": [
+        "RQ1"
+      ],
+      "active": true
+    }
+  ],
+  "interviews": [
+    {
+      "id": "I01",
+      "role": "Fictional demonstration participant",
+      "protocolVersion": "B",
+      "turns": [
+        {
+          "id": "I01-T001",
+          "interview": "I01",
+          "speaker": "Interviewer",
+          "kind": "interviewer",
+          "start": "00:00:00.000",
+          "end": "00:00:02.000",
+          "question": 1,
+          "text": "How do you share information?",
+          "suggestedCodes": []
+        },
+        {
+          "id": "I01-T002",
+          "interview": "I01",
+          "speaker": "I01",
+          "kind": "participant",
+          "start": "00:00:03.000",
+          "end": "00:00:15.000",
+          "question": 1,
+          "text": "We copy figures twice. Our spreadsheet works well. We copy figures twice. \ud83d\ude42",
+          "suggestedCodes": [
+            "C01"
+          ],
+          "priorMemo": "Fictional example. Select the specific sentence supporting a code."
+        }
+      ]
+    }
+  ]
+}
